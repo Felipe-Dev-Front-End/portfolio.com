@@ -551,6 +551,16 @@ text-align: center;
  color: #ff0000;
 }
 
+.copiRigth{
+  border-top: 1px solid #fff;
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 0 0;
+ 
+}
 @media(max-width: 768px) {
   footer{
     width: 100%;

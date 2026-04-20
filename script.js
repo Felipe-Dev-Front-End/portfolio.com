@@ -27,5 +27,8 @@ new TypeIt("#typingText", {
 // função para mostrar links
 function mostrarLinKs(){
 document.getElementById('footer').classList.toggle('change');
+document.getElementById('menuMobile').classList.remove('change');
+document.getElementById('navLinks').classList.remove('change');
+document.getElementById('bg').classList.remove('change');
 }
 // função para mostrar links
