@@ -23,3 +23,9 @@ new TypeIt("#typingText", {
 }).type('Desenvolvedor Front-End', { delay: 2000 }).delete(9).type(' Web Designer', { delay: 2000 })
   .go();
 // função texto digitado
+
+// função para mostrar links
+function mostrarLinKs(){
+document.getElementById('footer').classList.toggle('change');
+}
+// função para mostrar links

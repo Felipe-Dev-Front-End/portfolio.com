@@ -45,6 +45,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 /* header */
@@ -94,8 +95,6 @@ header {
 .change.menuMobile #bar2 {
   opacity: 0;
 }
-
-
 /* menuMobile */
 
 /* nameLogo */
@@ -289,11 +288,13 @@ header {
 /*main*/
 .main {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  position: fixed;
+  
 }
 
 /* class box da imagem */
@@ -358,6 +359,7 @@ header {
 /* class do texto do titulo */
 .main .titulos {
   user-select: none;
+  
 }
 
 .main .titulos #typingText {
@@ -372,13 +374,12 @@ header {
 
 /* texto do titulo */
 
-.main .contatos {
+.main .containerApps {
   padding-top: 1rem;
 }
 
-.main .contatos .apps i {
+.main .containerApps .apps i {
   font-size: 20px;
-
   background-color: #00ffff;
   color: #03101f;
   padding: 3px;
@@ -389,36 +390,52 @@ header {
   transition: 0.9s ease;
 }
 
-.main .contatos .apps i:hover {
+.main .containerApps .apps i:hover {
   transform: scale(1.2);
   filter: drop-shadow(0px 0px 4px #00ffff);
 }
 
-.main .contatos .btnContatos {
+.main .containerApps .btnContatos {
   padding-top: 1.5rem;
 }
 
-.main .contatos .btnContatos a {
+.main .containerApps a {
   text-decoration: none;
   color: inherit;
   border-radius: 10px;
   margin-right: 4px;
 }
 
-.main .contatos .btnContatos .btnContatos1 {
+.main .containerApps .btnContatos .btnContatos1 {
   background-color: #00ffff;
+  border: 1px solid #00ffff;
   border-radius: 5px;
-  padding: 10px;
+  padding: 9px;
   color: #03101f;
   font-weight: bold;
+  transition: 0.5s linear;
 }
 
-.main .contatos .btnContatos .btnContatos2 {
+.main .containerApps .btnContatos .btnContatos2 {
   border: 2px solid #00ffff;
+   border: 2px solid #00ffff;
   border-radius: 5px;
   padding: 8px;
   color: #00ffff;
   font-weight: bold;
+  transition: 0.5s linear;
+}
+
+.main .containerApps .btnContatos .btnContatos1:hover{
+background-color:transparent;
+color:#00ffff;
+box-shadow: 0px 0px 4px #00ffff;
+}
+
+.main .containerApps .btnContatos .btnContatos2:hover{
+  box-shadow: 0px 0px 4px #00ffff;
+  background-color: #00ffff;
+  color: #03101f;
 }
 
 /*  */
@@ -438,11 +455,13 @@ header {
   }
 
   .main .box {
-    height: 335px;
+    width: 190px;
+    height: 250px;
   }
 
   .main .box img {
-    height: 320px;
+    width: 183px;
+    height: 243px;
   }
 
   .main .titulos {
@@ -466,9 +485,90 @@ header {
     text-align: center;
   }
 
-  .main .titulos .contatos .apps {
+  .main .titulos .containerApps .apps {
     text-align: center;
   }
 }
 
 /* responsive 768 main e titulos*/
+
+/* footer meus contatos */
+footer{
+  background-color: #000000a9;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+#footer{
+  display: none;
+  transition: 0.5s linear;
+   
+}
+
+.change#footer{
+  display: flex;
+}
+
+footer h2{
+  padding: 1rem;
+}
+
+footer ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+   
+}
+
+footer ul li {
+  margin: 10px 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+footer li:hover{
+  color: #ff0000;
+}
+
+footer a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.emails p, .mediaSocial p, .linksRapidos p, .sujestoes p{
+text-align: center;
+ color: #ff0000;
+}
+
+@media(max-width: 768px) {
+  footer{
+    width: 100%;
+   position: fixed;
+     top: 0;
+     padding: 3rem;
+}
+
+  footer ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .linksRapidos{
+  display: none;
+}
+}
+/* footer meus contatos */
+
