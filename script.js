@@ -32,3 +32,12 @@ document.getElementById('navLinks').classList.remove('change');
 document.getElementById('bg').classList.remove('change');
 }
 // função para mostrar links
+
+// função loading page
+function loadingPage(){
+  const preloader = document.getElementById('preloader');
+  preloader.classList.toggle('preloader')
+}
+
+setTimeout(loadingPage, 3000)
+// função loading page
