@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
@@ -158,3 +159,188 @@
 <script src="script.js"></script>
 
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meu Portfólio</title>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- heder -->
+      <header>
+        <!-- menu -->
+        <div class="menu">
+          <!-- menuMobile -->
+          <div class="menuMobile" id="menuMobile" onclick="openMenu()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+          </div>
+          <!-- menuMobile -->
+
+          <!-- name logo -->
+          <div class="nameLogo">
+            <h2>Portfó<span>lio</span></h2>
+          </div>
+          <!-- name logo -->
+
+          <!-- navlinks -->
+          <nav>
+            <ul class="navLinks" id="navLinks">
+              <li><a href="index.html" class="inicio">Início</a></li>
+              <li><a href="#Contatos" onclick="mostrarLinKs()">Contatos</a></li>
+              <li><a href="#Projetos">Projetos</a></li>
+              <li><a href="#Habilidade">Habilidades</a></li>
+              <li><a href="#Sobre">Sobre</a></li>
+              <li><a href="#Sobre">Sobre</a></li>
+            </ul>
+          </nav>
+          <!-- navlinks -->
+
+          <!-- btndarkmode -->
+          <div class="btnDarkMode">
+            <input class="checkbox" type="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="bx bxs-sun"></i>
+              <i class="bx bxs-moon"></i>
+              <div class="ball"></div>
+            </label>
+
+            <a href="#" class="curriculo">Download CV</a>
+          </div>
+          <!-- btndarkmode -->
+        </div>
+        <!-- menu -->
+
+        <!-- background do menuMobile -->
+        <div class="bg" id="bg"></div>
+        <!-- background do menuMobile -->
+      </header>
+      <!-- heder -->
+
+      <!-- main -->
+      <div class="main">
+        <div class="box">
+          <img src="img/Felipe.jpg" alt="Felipe Alves Dev front end" />
+        </div>
+        <div class="titulos">
+          <h2>Olá, eu sou</h2>
+          <h1>Felipe Alves</h1>
+          <h3>Sou <span id="typingText"></span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            numquam aperiam repellat quis facere maxime veniam corporis, cum
+            delectus quisquam recusandae velit quo enim quod at sunt iste
+            corrupti ea?
+          </p>
+
+          <!-- class containerApps apps -->
+          <div class="containerApps">
+            <div class="apps">
+              <a href="https://wa.me/5511953044725" target="_blank" rel="noopener noreferrer><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.instagram.com/_felipex_/" target="_blank" rel="noopener noreferrer><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/felipe-alves-59462618a/" target="_blank" rel="noopener noreferrer><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/Felipe-Dev-Front-End" target="_blank" rel="noopener noreferrer><i class="bx bxl-github"></i></a>
+
+              <div class="btnContatos">
+                <a href="" class="btnContatos1">Mais Sobre mim</a>
+                <a href="#Contatos" class="btnContatos2">Meus Contatos</a>
+              </div>
+            </div>
+          </div>
+          <!-- class contatos -->
+        </div>
+      </div>
+      <!-- loadingPage -->
+      <div class="preloader" id="preloader">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="text"></div>
+      </div>
+      <!-- loadingPage -->
+      <!-- main -->
+      <!-- footer -->
+      <footer id="footer">
+        <h2>Contacte Me</h2>
+        <ul id="Contatos" class="contatos">
+          <div class="emails">
+            <p>Contatos</p>
+            <li>
+              Email:
+              <a href="mailto:// flp_luizfelipe@hotmail.com"
+                >flp_luizfelipe@hotmail.com</a
+              >
+            </li>
+            <li>
+              Gmail:
+              <a href="mailto:// luizfelipea445@gmail.com"
+                >luizfelipea445@gmail.com</a
+              >
+            </li>
+            <li>
+              Whatsapp:
+              <a href="https://wa.me/5511953044725" target="_blank" rel="noopener noreferrer>11953044725</a>
+            </li>
+            <li>
+              Celular:
+              <a href="#">11953044725</a>
+            </li>
+          </div>
+
+          <div class="mediaSocial">
+            <p>Meus Apps</p>
+            <li>
+              <a href="https://wa.me/5511953044725" target="_blank" rel="noopener noreferrer><i class="bx bxl-whatsapp"></i> Whatsapp</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_felipex_/" target="_blank" rel="noopener noreferrer><i class="bx bxl-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felipe-alves-59462618a/" target="_blank" rel="noopener noreferrer><i class="bx bxl-linkedin"></i> Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/Felipe-Dev-Front-End" target="_blank" rel="noopener noreferrer><i class="bx bxl-github"></i> Github</a>
+            </li>
+          </div>
+
+          <div class="linksRapidos">
+            <p>Links Úteis</p>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+          </div>
+
+          <!-- alterar este aqui -->
+          <div class="sujestoes">
+            <p>faq</p>
+            <li><a href="#">Reclamações</a></li>
+            <li><a href="#">Sujestões</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Habilidades</a></li>
+          </div>
+          <!-- alterar este aqui -->
+        </ul>
+        <div class="copiRigth">
+          <p> Desenvolvido por &copy; Felipe Alves Dev Front-End</p>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- container -->
+  </body>
+  <script src="script.js"></script>
+</html>
+>>>>>>> 7f804a6 (Nova atualização do portfólio)
